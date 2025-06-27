@@ -51,7 +51,7 @@ def calculate():
 
         label_result.config(text=f"Your BMI is: {bmi:.2f}.\n You are {category}")
     except ValueError:
-        label_result.config(text="Invalid Entry")
+        label_result.config(text="Invalid Entry. Enter both weight and height!")
 
 
 button = Button(window, text="Calculate", command=calculate)
